@@ -28,6 +28,7 @@ Copy an entire disk to an image file.
 
 - **Smart backup** (on by default) copies only the parts of the disk that actually contain data and skips empty space, so the image is much smaller and faster to make. On an NTFS save drive the file is *sparse* — skipped areas take up no real space.
 - **Compress** wraps the image in gzip (`.img.gz`) for an even smaller file.
+- **SHA-256** saves a checksum next to the image. When you later restore it, DiskImager offers to re-check the image first and refuses to write a corrupted one.
 - If a backup is interrupted, run it again to the same file and choose **Resume** to continue where it stopped.
 
 ### ⬇️ Restore — image → disk
@@ -100,6 +101,7 @@ You can also type or paste a UNC path (`\\server\share\image.img`) straight into
 
 ## Handy to know
 
+- **Remembers your settings** — your last folder and option choices come back next time you open it.
 - **Drag & drop** an image file anywhere onto the window to load it.
 - **Keyboard:** `Enter` starts the current action · `Esc` cancels a running one · `F5` re-scans for disks.
 - The **↺** button rescans after you plug in a new drive.
