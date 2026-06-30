@@ -8,7 +8,7 @@
 
 ## Download
 
-1. Go to the [**Releases**](https://github.com/NookieAI/DiskImager/releases/tag/v1.0) page and download **`DiskImager.exe`**.
+1. Go to the [**Releases**](https://github.com/NookieAI/DiskImager/releases/latest) page and download **`DiskImager.exe`**.
 2. **Right-click → Run as administrator.** Raw disk access requires it — the app will tell you if it isn’t elevated.
 
 It’s a single file. Nothing is installed, and nothing is left behind. Works on Windows 7 and later.
