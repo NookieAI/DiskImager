@@ -85,12 +85,26 @@ The progress bar shows the live percentage, and below it you get the **transfer 
 
 ---
 
+## Network shares (NAS / SMB)
+
+Back up to — or restore from — a network share. Click the **network drive** button next to **Browse** / **Open** to connect:
+
+1. Enter the share path, e.g. `\\NAS\backups`.
+2. Add a **username** and **password** if the share requires them.
+3. Optionally **map it to a drive letter**.
+4. Click **Connect** — the location is ready to use.
+
+You can also type or paste a UNC path (`\\server\share\image.img`) straight into the path box.
+
+> Because the app runs as administrator, it doesn’t automatically see the drive letters you mapped in Explorer. Use the **Connect** button (or a full `\\server\share` path) and DiskImager reaches the share directly.
+
 ## Handy to know
 
 - **Drag & drop** an image file anywhere onto the window to load it.
 - **Keyboard:** `Enter` starts the current action · `Esc` cancels a running one · `F5` re-scans for disks.
 - The **↺** button rescans after you plug in a new drive.
 - When you pick an image, a label tells you the detected format and whether it’s ready to write.
+- DiskImager **always runs as administrator** — raw disk access needs it, so Windows will ask for elevation when you launch it.
 
 ---
 
