@@ -105,6 +105,7 @@ You can also type or paste a UNC path (`\\server\share\image.img`) straight into
 - The **↺** button rescans after you plug in a new drive.
 - When you pick an image, a label tells you the detected format and whether it’s ready to write.
 - DiskImager **always runs as administrator** — raw disk access needs it, so Windows will ask for elevation when you launch it.
+- **Automatic updates** — DiskImager checks for a newer release on launch. When one is available, an **Update** button appears in the title bar; click it to download and restart on the new version in one step.
 
 ---
 
