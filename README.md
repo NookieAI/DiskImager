@@ -103,8 +103,8 @@ You can also type or paste a UNC path (`\\server\share\image.img`) straight into
 
 - **Remembers your settings** — your last folder and option choices come back next time you open it.
 - **Drag & drop** an image file anywhere onto the window to load it.
-- **Keyboard:** `Enter` starts the current action · `Esc` cancels a running one · `F5` re-scans for disks.
-- The **↺** button rescans after you plug in a new drive.
+- **Keyboard:** `Enter` starts the current action · `Esc` cancels a running one · `F5` re-scans for disks · `Ctrl+L` opens the operation log.
+- **Live disk list** — the list refreshes automatically when you plug in or remove a USB stick or SD card. The **↺** button rescans on demand too.
 - When you pick an image, a label tells you the detected format and whether it’s ready to write.
 - DiskImager **always runs as administrator** — raw disk access needs it, so Windows will ask for elevation when you launch it.
 - **Automatic updates** — DiskImager checks for a newer release on launch. When one is available, an **Update** button appears in the title bar; click it to download and restart on the new version in one step.
@@ -116,6 +116,7 @@ You can also type or paste a UNC path (`\\server\share\image.img`) straight into
 DiskImager writes directly to physical disks, so a wrong choice can erase the wrong drive. A few things keep you safe:
 
 - **Restore** and **Format** always pop up a confirmation that names the exact disk (`\\.\PhysicalDriveN`), its size, and its model. Read it before clicking **Yes**.
+- **Your system disk is protected.** The disk Windows runs from is detected, tagged **[SYSTEM]** in the list, and cannot be formatted or overwritten with a single click — you have to type **ERASE** to confirm. It’s very hard to wipe the wrong drive by accident.
 - Removable drives are tagged **[USB/SD]** in the list so you can tell a memory card from a hard drive at a glance.
 - Empty/zero-size drives are hidden, and the app never picks a disk for you — you’re always in control of the target.
 
